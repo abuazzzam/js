@@ -9,6 +9,8 @@
 
 // console.log(AnaToVori(5));
 
-let str = "Hello";
-let lastChar = str[str.length - 1];
-console.log(lastChar);
+// let str = "Hello";
+// let lastChar = str[str.length - 1];
+// console.log(lastChar);
+
+console.log(Array.isArray([1, 3, 5]));

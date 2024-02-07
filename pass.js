@@ -3,12 +3,14 @@
 // const obj = {name: "kolimuddin", 
 //              birthYear: 1999, 
 //              siteName: "google"}
-const obj = { name: "rahat" , birthYear: 2002, siteName: "Facebook" }
+// const obj = { name: "rahat" , birthYear: 2002, siteName: "Facebook" }
+const obj = { name: "maisha" , birthYear: 2002 }
+// { name: "toky" , birthYear: 200, siteName: "Facebook" }
 
 function password(obj) {
     if(typeof obj !== 'object' || !obj.name || !obj.birthYear || !obj.siteName || obj.birthYear.toString().length !== 4){
         return 'invalid';
-    }
+    } 
     // Google#kolimuddin@1999
         let name = obj.name;
         let birthYear = obj.birthYear;

@@ -28,10 +28,11 @@ function moreThanOne (numbers){
     const deep = [];
     sum = 0
     for(const num of numbers ){
-        if( deep.includes(num) === false){
-            deep.push(num);
+        // if( deep.includes(num) === false){
+        //     deep.push(num);
             
-        }
+        // }
+        console.log(num);
 
     }
     return deep;
