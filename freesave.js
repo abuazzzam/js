@@ -1,10 +1,10 @@
 
-const arr =  [ 1000 , 2000 , 3000 ];
-const livingCost = 54000;
+const arr =  [ 5000 , 2000 , 9000, 1000];
+const livingCost = 5400;
 
 function monthlySavings(incomes , livingCost) {
     if(Array.isArray(incomes) !== true || typeof livingCost !== 'number'){
-        return 'invalid'
+        return 'invalid input'
     }
         let bellowSum = 0;
         let upperSum = 0;
@@ -18,12 +18,10 @@ function monthlySavings(incomes , livingCost) {
             const handSavings = totalIncome - livingCost;
             if(handSavings >= 0){
                 return handSavings;
-            }else return "earn more"
-         
+            }
+            else return "earn more"
     }  
-        
     }
-    
     }
     
     const inMyHand = monthlySavings(arr,livingCost);

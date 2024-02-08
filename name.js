@@ -1,16 +1,15 @@
 
 
 
-const mname = 's';
+const mname = { name:'rafee'}
 
 function checkName(sname) {
     if(typeof sname !== 'string' || typeof sname === 'number'){
         return 'invalid';
     }
-
    const compareLetters = ['A', 'y', 'i', 'e', 'o', 'u', 'w'];
-    let lastChar = mname[mname.length - 1];
-    if(compareLetters.includes(lastChar)){
+    let lastletter = mname[mname.length - 1];
+    if(compareLetters.includes(lastletter)){
         return 'good name';
     } else
             return 'bad name';

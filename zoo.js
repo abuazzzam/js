@@ -2,15 +2,17 @@
 
 
 function calculateMoney(ticketSale) {
-    if( ticketSale >= 0 ) {
+    if( ticketSale < 0) {
+        return 'Invalid Number'; 
+    } else {
     const securityCost = 500;
     const lunchCost = 8 * 50;
     const totalCost = securityCost + lunchCost;
     const totalSellEarn = ticketSale * 120;
     const inHand = totalSellEarn - totalCost;
     return inHand;
-} else
-    return 'invalid';  
+} 
+    
 }
 
-console.log(calculateMoney(1055));
+console.log(calculateMoney(200));
